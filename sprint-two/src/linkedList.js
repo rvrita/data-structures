@@ -56,5 +56,10 @@ var Node = function (value) {
 };
 
 /*
- * Complexity: What is the time complexity of the above functions?
+
+Complexity: What is the time complexity of the above functions?
+
+ addToTail, removeHead: constant O(1)
+ contains: linear O(n)
+
  */
