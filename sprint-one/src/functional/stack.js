@@ -14,7 +14,7 @@ var Stack = function() {
   };
 
   someInstance.pop = function() {
-    if (count === 0) return;
+    if (count === 0) { return; }
     // decrease count
     count--;
     // store item to delete to return

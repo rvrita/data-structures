@@ -5,32 +5,32 @@ var Queue = function() {
   var storage = {};
 
   // keep pointer to the index of first and last item
-  var first_index = 0;
-  var last_index = 0;
+  var firstIndex = 0;
+  var lastIndex = 0;
 
   someInstance.enqueue = function(value) {
     // add new item to storage
-    storage[last_index] = value;
+    storage[lastIndex] = value;
     // increment last index
-    last_index++;
+    lastIndex++;
   };
 
   someInstance.dequeue = function() {
     // if empty return
-    if (last_index-first_index <= 0) return;
+    if (lastIndex - firstIndex <= 0) { return; }
     // store deleted item
-    var deleted = storage[first_index];
+    var deleted = storage[firstIndex];
     // delete item
-    delete storage[first_index];
+    delete storage[firstIndex];
     // increment first index
-    first_index++;
+    firstIndex++;
     // return deleted item
     return deleted;
   };
 
   someInstance.size = function() {
     // return last - first
-    return last_index-first_index
+    return lastIndex - firstIndex;
   };
 
   return someInstance;
