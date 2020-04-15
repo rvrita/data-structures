@@ -21,6 +21,10 @@ describe('linkedList', function() {
     expect(linkedList.tail.value).to.equal(4);
     linkedList.addToTail(5);
     expect(linkedList.tail.value).to.equal(5);
+    //add another tail value
+    linkedList.addToTail(6);
+    expect(linkedList.tail.value).to.equal(6);
+
   });
 
   it('should remove the head from the list when removeHead is called', function() {
@@ -52,4 +56,24 @@ describe('linkedList', function() {
   });
 
   // add more tests here to test the functionality of linkedList
+
+  // it('should check middle element', function() {
+  //   linkedList.addToTail(4);
+  //   linkedList.addToTail(5);
+  //   linkedList.addToTail(6);
+  //   expect(linkedList.head.next.value).to.equal(5);
+  // });
+
+  it('should remove a specific value from the list', function () {
+    linkedList.addToTail(4);
+    linkedList.addToTail(5);
+    linkedList.addToTail(6);
+    linkedList.addToTail(7);
+    expect(linkedList.contains(6)).to.equal(true);
+    linkedList.remove(6);
+    expect(linkedList.contains(6)).to.equal(false);
+
+  });
+
+
 });
