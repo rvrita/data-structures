@@ -52,7 +52,7 @@ treeMethods.remove = function (target) {
       this.children[i].remove(target);
     }
   }
-}
+};
 
 /*
 
