@@ -31,5 +31,4 @@ describe('set', function() {
     set.add(7);
     expect(set._storage.length).to.equal(3);
   });
-
 });
