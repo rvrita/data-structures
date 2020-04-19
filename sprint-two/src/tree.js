@@ -55,7 +55,6 @@ treeMethods.remove = function (target) {
 };
 
 /*
-
 Complexity: What is the time complexity of the above functions?
 
 addChild: constant time complexity, O(1)
