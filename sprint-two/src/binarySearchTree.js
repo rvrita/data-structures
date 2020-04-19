@@ -1,5 +1,5 @@
 var BinarySearchTree = function (value) {
-
+  // creating object
   var tree = Object.create(BinarySearchTree.prototype);
   //create value property
   tree.value = value;
